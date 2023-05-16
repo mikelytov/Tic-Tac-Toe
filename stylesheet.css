@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2em 1em;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: #C1121F;
+    transition: background-color 0.5s ease;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5em;
+    background-color: #1B1F22;
+    padding: 2em;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #FDF0D5;
+    margin: 0px;
+}
+
+p, div {
+    font-weight: 400;
+    font-size: 20px;
+    color: #FDF0D5;
+}
+
+p {
+    margin: 0px;
+}
+
+#message {
+    max-width: 300px;
+}
+
+#board {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: inset;
+    box-sizing: border-box;
+    background-color: #FDF0D5;
+    font-size: 60px;
+    font-weight: 900;
+    padding: 13px 0;
+    transition: 0.2s ease-in-out;
+}
+
+.square:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.x {
+    color: #780000;
+}
+
+.o {
+    color: #003049;
+}
+
+#X {
+    color: #C1121F;
+    font-weight: 900;
+}
+
+#O {
+    color: #669BBC;
+    font-weight: 900;
+}
+
+#draw {
+    color: #FDF0D5;
+    font-weight: 900;
+}
+
+#scoreboard {
+    display: flex;
+    flex-direction: row;
+}
+
+.score {
+    margin: 5px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 900;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    background-color: #1B1F22;
+    color: #FDF0D5;
+}
+
+#xscore {
+    background-color: #780000;
+    color: #C1121F;
+}
+
+#oscore {
+    background-color: #003049;
+    color: #669BBC;
+}
+
+.button {
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 900;
+    border-radius: 10px;
+    color: #1B1F22;
+    cursor: pointer;
+    background-color: #FDF0D5;
+}
+
+.button:hover {
+    filter: brightness(150%);
+}
